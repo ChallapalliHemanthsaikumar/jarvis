@@ -1,0 +1,13 @@
+tr = table.findAll("tr")
+    for tr in table: 
+        print(tr)
+        for td in tr: 
+            try: 
+                if td.find("font"):
+                    font = td.find("font") 
+                    if font.find(text="Jan"): 
+                        month = font.find(text="Jan")
+                        print(tr)               
+                        print(month)
+            except Exception: 
+                pass
